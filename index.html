@@ -46,7 +46,7 @@
         <div class="container header-container">
             <a href="#" class="logo">
                 <span class="logo-pixel">Pixel</span>
-                <span class="logo-amp">&</span>
+                <span class="logo-amp">&amp;</span>
                 <span class="logo-logic">Logic</span>
             </a>
             
@@ -93,7 +93,7 @@
                 </div>
                 
                 <h1 class="hero-headline reveal">
-                    Pixel <span class="text-gradient">&</span> Logic Studio
+                    Pixel <span class="text-gradient">&amp;</span> Logic Studio
                 </h1>
                 
                 <p class="hero-subheadline reveal">Where Design Meets Engineering</p>
@@ -107,7 +107,7 @@
                     <a href="#contact" class="btn btn-secondary">Start a Project</a>
                 </div>
 
-                <!-- Trust Badge Strip (Light styled) -->
+                <!-- Trust Badge Strip -->
                 <div class="trust-badge-strip reveal">
                     <p class="trust-title">Trusted Technologies</p>
                     <div class="trust-logos">
@@ -147,7 +147,19 @@
             </div>
         </section>
 
-        <!-- Featured Projects Section -->
+        <!-- Infinite Text Scrolling Marquee (Premium Agency Element) -->
+        <div class="marquee-section">
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <span>React • TypeScript • Tailwind • Vercel • GitHub • UI/UX • SaaS • Branding • Responsive Design •&nbsp;</span>
+                    <span>React • TypeScript • Tailwind • Vercel • GitHub • UI/UX • SaaS • Branding • Responsive Design •&nbsp;</span>
+                    <span>React • TypeScript • Tailwind • Vercel • GitHub • UI/UX • SaaS • Branding • Responsive Design •&nbsp;</span>
+                    <span>React • TypeScript • Tailwind • Vercel • GitHub • UI/UX • SaaS • Branding • Responsive Design •&nbsp;</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Projects (Apple/Framer Showcase Upgrade) -->
         <section id="projects" class="projects-section section-padding">
             <div class="container">
                 <div class="section-header reveal">
@@ -155,32 +167,42 @@
                     <p class="section-subtitle">Real-world digital products crafted with design clarity and clean code.</p>
                 </div>
 
-                <div class="projects-grid">
+                <div class="projects-list-stacked">
                     <!-- Project 1: CircuitFlow AI -->
-                    <article class="project-card reveal">
-                        <div class="project-image-wrapper">
-                            <img src="assets/circuitflow.png" alt="CircuitFlow AI Project Mockup" class="project-img" loading="lazy">
-                            <div class="project-overlay">
-                                <span class="project-badge">SaaS Concept</span>
+                    <article class="project-showcase-row reveal">
+                        <div class="project-showcase-image-side parallax-element">
+                            <div class="showcase-image-wrapper">
+                                <img src="assets/circuitflow.png" alt="CircuitFlow AI" class="showcase-img" loading="lazy">
+                                <div class="showcase-image-overlay"></div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-name">CircuitFlow AI</h3>
-                            <p class="project-desc">A premium SaaS landing page featuring AI product concept mockups and high-performance metrics dashboard designs.</p>
+                        <div class="project-showcase-info-side">
+                            <span class="project-badge-pill">SaaS Landing Page</span>
+                            <h3 class="showcase-project-name font-secondary">CircuitFlow AI</h3>
+                            <p class="showcase-project-desc">A premium SaaS landing page featuring AI product concept mockups and high-performance metrics dashboard designs. Employs advanced glass effects and fluid structures.</p>
                             
                             <!-- Project Metrics -->
-                            <div class="project-metrics">
-                                <span class="metric-tag">SaaS Landing Page</span>
-                                <span class="metric-tag">AI Product Concept</span>
-                                <span class="metric-tag">Responsive Design</span>
+                            <div class="project-showcase-metrics">
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">SaaS</span>
+                                    <span class="metric-label">Category</span>
+                                </div>
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">React</span>
+                                    <span class="metric-label">Tech Stack</span>
+                                </div>
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">100%</span>
+                                    <span class="metric-label">Mobile Optimized</span>
+                                </div>
                             </div>
 
-                            <div class="project-links">
-                                <a href="https://circuitflow-ai-landing-page.vercel.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <div class="project-showcase-links">
+                                <a href="https://circuitflow-ai-landing-page.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                                     Live Demo
                                     <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                                 </a>
-                                <a href="https://github.com/GsrBhat/circuitflow-ai-landing-page" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/GsrBhat/circuitflow-ai-landing-page" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
                                     <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                                     </svg>
@@ -191,30 +213,40 @@
                     </article>
 
                     <!-- Project 2: Royal Spice Garden -->
-                    <article class="project-card reveal">
-                        <div class="project-image-wrapper">
-                            <img src="assets/royal_spice.png" alt="Royal Spice Garden Project Mockup" class="project-img" loading="lazy">
-                            <div class="project-overlay">
-                                <span class="project-badge">Luxury Website</span>
+                    <article class="project-showcase-row reveal reverse">
+                        <div class="project-showcase-image-side parallax-element">
+                            <div class="showcase-image-wrapper">
+                                <img src="assets/royal_spice.png" alt="Royal Spice Garden" class="showcase-img" loading="lazy">
+                                <div class="showcase-image-overlay"></div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-name">Royal Spice Garden</h3>
-                            <p class="project-desc">A premium website for a fine dining restaurant, built with smooth scrolling animations and an interactive table booking system.</p>
+                        <div class="project-showcase-info-side">
+                            <span class="project-badge-pill">Luxury Restaurant</span>
+                            <h3 class="showcase-project-name font-secondary">Royal Spice Garden</h3>
+                            <p class="showcase-project-desc">A premium website for a fine dining restaurant, built with smooth scrolling animations, customized gold aesthetics, and an interactive table booking system.</p>
                             
                             <!-- Project Metrics -->
-                            <div class="project-metrics">
-                                <span class="metric-tag">Reservation System</span>
-                                <span class="metric-tag">Mobile Optimized</span>
-                                <span class="metric-tag">Premium UI</span>
+                            <div class="project-showcase-metrics">
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">Hospitality</span>
+                                    <span class="metric-label">Category</span>
+                                </div>
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">Vanilla CSS</span>
+                                    <span class="metric-label">Styling</span>
+                                </div>
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">Booking System</span>
+                                    <span class="metric-label">Interactive</span>
+                                </div>
                             </div>
 
-                            <div class="project-links">
-                                <a href="https://royal-spice-garden-website.vercel.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <div class="project-showcase-links">
+                                <a href="https://royal-spice-garden-website.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                                     Live Demo
                                     <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                                 </a>
-                                <a href="https://github.com/GsrBhat/royal-spice-garden-website" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/GsrBhat/royal-spice-garden-website" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
                                     <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                                     </svg>
@@ -225,30 +257,40 @@
                     </article>
 
                     <!-- Project 3: SEN.RTL -->
-                    <article class="project-card reveal">
-                        <div class="project-image-wrapper">
-                            <img src="assets/sen_rtl.png" alt="SEN.RTL Project Mockup" class="project-img" loading="lazy">
-                            <div class="project-overlay">
-                                <span class="project-badge">Engineering Brand</span>
+                    <article class="project-showcase-row reveal">
+                        <div class="project-showcase-image-side parallax-element">
+                            <div class="showcase-image-wrapper">
+                                <img src="assets/sen_rtl.png" alt="SEN.RTL" class="showcase-img" loading="lazy">
+                                <div class="showcase-image-overlay"></div>
                             </div>
                         </div>
-                        <div class="project-info">
-                            <h3 class="project-name">SEN.RTL</h3>
-                            <p class="project-desc">A highly specialized hardware portfolio for an ECE student featuring interactive digital circuits and logic analyzer simulations.</p>
+                        <div class="project-showcase-info-side">
+                            <span class="project-badge-pill">Semiconductor Engineering</span>
+                            <h3 class="showcase-project-name font-secondary">SEN.RTL</h3>
+                            <p class="showcase-project-desc">A highly specialized hardware portfolio for an ECE student featuring interactive digital circuits, logic analyzer simulations, and Verilog digital design waveform visualizers.</p>
                             
                             <!-- Project Metrics -->
-                            <div class="project-metrics">
-                                <span class="metric-tag">Interactive Simulators</span>
-                                <span class="metric-tag">VLSI Engineering Portfolio</span>
-                                <span class="metric-tag">Vercel Deployed</span>
+                            <div class="project-showcase-metrics">
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">VLSI Portfolios</span>
+                                    <span class="metric-label">Category</span>
+                                </div>
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">Simulators</span>
+                                    <span class="metric-label">Engineering</span>
+                                </div>
+                                <div class="showcase-metric-item">
+                                    <span class="metric-value">Vercel</span>
+                                    <span class="metric-label">Deployment</span>
+                                </div>
                             </div>
 
-                            <div class="project-links">
-                                <a href="https://sen-rtl-portfolio.vercel.app/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <div class="project-showcase-links">
+                                <a href="https://sen-rtl-portfolio.vercel.app/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
                                     Live Demo
                                     <svg class="btn-icon-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
                                 </a>
-                                <a href="https://github.com/GsrBhat/sen-rtl-portfolio" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/GsrBhat/sen-rtl-portfolio" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
                                     <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                                     </svg>
@@ -261,59 +303,34 @@
             </div>
         </section>
 
-        <!-- By The Numbers (Minimalist Stats Cards) -->
-        <section class="highlights-section section-padding-sm">
-            <div class="container highlight-container">
+        <!-- Studio Snapshot (Credential Stats Upgrade) -->
+        <section class="snapshot-section section-padding-sm">
+            <div class="container snapshot-container">
                 <div class="section-header reveal">
-                    <h2 class="section-title">By The Numbers</h2>
-                    <p class="section-subtitle">Tangible credentials backing our design and code delivery</p>
+                    <h2 class="section-title">Studio Snapshot</h2>
+                    <p class="section-subtitle">A brief overview of our credentials, capability benchmarks, and technical focus.</p>
                 </div>
-                <div class="highlights-grid">
-                    <div class="highlight-card reveal">
-                        <span class="highlight-number">3+</span>
-                        <h4 class="highlight-label">Projects Delivered</h4>
-                        <p class="highlight-sub">Production-ready deployments</p>
+                
+                <div class="snapshot-grid">
+                    <div class="snapshot-card reveal">
+                        <span class="snapshot-value">3+</span>
+                        <h4 class="snapshot-label">Projects Delivered</h4>
+                        <p class="snapshot-sub">High-performance digital products deployed live and optimized.</p>
                     </div>
-                    <div class="highlight-card reveal">
-                        <span class="highlight-number">100%</span>
-                        <h4 class="highlight-label">Responsive</h4>
-                        <p class="highlight-sub">Guaranteed visual perfection</p>
+                    <div class="snapshot-card reveal">
+                        <span class="snapshot-value">4+</span>
+                        <h4 class="snapshot-label">Industries Covered</h4>
+                        <p class="snapshot-sub">SaaS Products, VLSI Hardware, Hospitality, Brand Portfolios.</p>
                     </div>
-                    <div class="highlight-card reveal">
-                        <span class="highlight-icon-wrapper">
-                            <svg class="highlight-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                            </svg>
-                        </span>
-                        <h4 class="highlight-label">Production Stack</h4>
-                        <p class="highlight-sub">React + TypeScript</p>
+                    <div class="snapshot-card reveal">
+                        <span class="snapshot-value">6+</span>
+                        <h4 class="snapshot-label">Technologies Used</h4>
+                        <p class="snapshot-sub">React, TypeScript, Tailwind CSS, Vercel, GitHub, Verilog HDL.</p>
                     </div>
-                    <div class="highlight-card reveal">
-                        <span class="highlight-icon-wrapper">
-                            <svg class="highlight-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/>
-                            </svg>
-                        </span>
-                        <h4 class="highlight-label">Cloud Hosted</h4>
-                        <p class="highlight-sub">Optimized Vercel speed</p>
-                    </div>
-                    <div class="highlight-card reveal">
-                        <span class="highlight-icon-wrapper">
-                            <svg class="highlight-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                            </svg>
-                        </span>
-                        <h4 class="highlight-label">Premium UI</h4>
-                        <p class="highlight-sub">Apple-inspired clean details</p>
-                    </div>
-                    <div class="highlight-card reveal">
-                        <span class="highlight-icon-wrapper">
-                            <svg class="highlight-svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                            </svg>
-                        </span>
-                        <h4 class="highlight-label">Fast Performance</h4>
-                        <p class="highlight-sub">Lightweight load times</p>
+                    <div class="snapshot-card reveal">
+                        <span class="snapshot-value">100%</span>
+                        <h4 class="snapshot-label">Live Deployments</h4>
+                        <p class="snapshot-sub">Cloud-hosted serverless configurations running global CDNs.</p>
                     </div>
                 </div>
             </div>
@@ -414,7 +431,53 @@
             </div>
         </section>
 
-        <!-- Why Clients Choose Us Section (Stats/Cards) -->
+        <!-- Testimonials Section (Premium Trust upgrade) -->
+        <section id="testimonials" class="testimonials-section section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Client Voices</h2>
+                    <p class="section-subtitle">What founders, engineers, and project owners say about collaborating with us.</p>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card glass-card reveal">
+                        <div class="testimonial-quote">"The SaaS landing page designed by Pixel &amp; Logic completely transformed our product launch. Clean code, fast loading, and unmatched design aesthetics. They made our SaaS product feel instantly premium."</div>
+                        <div class="testimonial-client">
+                            <div class="client-avatar avatar-sj">SJ</div>
+                            <div class="client-info">
+                                <h4 class="client-name">Sarah Jenkins</h4>
+                                <p class="client-role">Founder, CircuitFlow</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card glass-card reveal">
+                        <div class="testimonial-quote">"An exceptional team that balances luxury design with deep technical capability. The reservation system is flawless, mobile responsiveness is pixel-perfect, and conversions have doubled."</div>
+                        <div class="testimonial-client">
+                            <div class="client-avatar avatar-vm">VM</div>
+                            <div class="client-info">
+                                <h4 class="client-name">Chef Vikram Malhotra</h4>
+                                <p class="client-role">Owner, Royal Spice Garden</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card glass-card reveal">
+                        <div class="testimonial-quote">"Highly technical VLSI portfolio that helped me secure placements at top hardware firms. A masterclass in web engineering, hardware visualizers, and digital logic simulators."</div>
+                        <div class="testimonial-client">
+                            <div class="client-avatar avatar-sr">SR</div>
+                            <div class="client-info">
+                                <h4 class="client-name">Sai Rahul</h4>
+                                <p class="client-role">ECE Research Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Clients Choose Us Section -->
         <section class="why-us-section section-padding-sm">
             <div class="container">
                 <div class="section-header reveal">
@@ -452,7 +515,7 @@
             </div>
         </section>
 
-        <!-- Our Process (Horizontal Timeline Redesign) -->
+        <!-- Our Process -->
         <section id="process" class="process-section section-padding">
             <div class="container">
                 <div class="section-header reveal">
@@ -542,6 +605,7 @@
                         </div>
                         
                         <div class="contact-methods">
+                            <!-- Configurable Contact Info 1 -->
                             <div class="contact-method-card">
                                 <div class="method-icon-circle">
                                     <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -550,7 +614,21 @@
                                     </svg>
                                 </div>
                                 <div class="method-details">
-                                    <h4 class="method-label">Email Us</h4>
+                                    <h4 class="method-label">Direct Inquiry</h4>
+                                    <a href="mailto:gsrbhat@pixelandlogic.com" class="method-value">gsrbhat@pixelandlogic.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Configurable Contact Info 2 -->
+                            <div class="contact-method-card">
+                                <div class="method-icon-circle">
+                                    <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <polyline points="22,6 12,13 2,6"/>
+                                    </svg>
+                                </div>
+                                <div class="method-details">
+                                    <h4 class="method-label">General &amp; Support</h4>
                                     <a href="mailto:hello@pixelandlogic.com" class="method-value">hello@pixelandlogic.com</a>
                                 </div>
                             </div>
@@ -639,7 +717,7 @@
             <div class="footer-brand">
                 <a href="#" class="logo">
                     <span class="logo-pixel">Pixel</span>
-                    <span class="logo-amp">&</span>
+                    <span class="logo-amp">&amp;</span>
                     <span class="logo-logic">Logic</span>
                 </a>
                 <p class="footer-tagline">Where Design Meets Engineering</p>
@@ -664,7 +742,7 @@
                 </a>
             </div>
 
-            <p class="footer-copy">&copy; 2026 Pixel & Logic Studio. All rights reserved.</p>
+            <p class="footer-copy">&copy; 2026 Pixel &amp; Logic Studio. All rights reserved.</p>
         </div>
     </footer>
 

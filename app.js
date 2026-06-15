@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollReveal();
     initActiveNavTracking();
     initContactForm();
+    initParallax();
 
 });
 
@@ -280,3 +281,48 @@ function initContactForm() {
         }, 5000);
     }
 }
+
+/**
+ * 8. Premium Parallax Motion
+ * Applies a subtle scroll-driven parallax shift to featured project previews and floating blobs
+ */
+function initParallax() {
+    const parallaxElements = document.querySelectorAll('.parallax-element');
+    const isFinePointer = window.matchMedia('(pointer: fine)').matches;
+    if (!isFinePointer || parallaxElements.length === 0) return;
+
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        
+        parallaxElements.forEach(el => {
+            const parentTop = el.getBoundingClientRect().top + scrolled;
+            const parentHeight = el.offsetHeight;
+            const viewHeight = window.innerHeight;
+            
+            // Check if element is in viewport bounds
+            if (scrolled + viewHeight > parentTop && scrolled < parentTop + parentHeight) {
+                // Calculate relative position of element in viewport (-1 to 1)
+                const elementCenter = parentTop + (parentHeight / 2);
+                const viewportCenter = scrolled + (viewHeight / 2);
+                const offset = viewportCenter - elementCenter;
+                
+                // Scale value to a gentle offset (speed factor of 0.05)
+                const translateY = offset * 0.05;
+                
+                const img = el.querySelector('.showcase-img');
+                if (img) {
+                    img.style.transform = `translate3d(0, ${translateY}px, 0)`;
+                }
+            }
+        });
+        
+        // Also apply a subtle lag shift to the floating background mesh orbs
+        const orbs = document.querySelectorAll('.glow-orb');
+        orbs.forEach((orb, index) => {
+            const speed = (index + 1) * 0.03;
+            orb.style.transform = `translate3d(0, ${scrolled * speed}px, 0)`;
+        });
+        
+    }, { passive: true });
+}
+
