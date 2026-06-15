@@ -114,7 +114,7 @@ function initCustomCursor() {
     renderCursor();
 
     // Hover triggers for interactive nodes
-    const hoverSelectors = 'a, button, select, input, textarea, .project-card, .highlight-card, .service-card, .why-card, .tech-card';
+    const hoverSelectors = 'a, button, select, input, textarea, .project-card, .highlight-card, .service-card, .why-card, .tech-card, .approach-card, .diff-card, .snapshot-card, .bento-card, .project-showcase-item';
     const elementsToHover = document.querySelectorAll(hoverSelectors);
 
     elementsToHover.forEach(el => {
