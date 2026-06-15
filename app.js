@@ -207,10 +207,11 @@ function initContactForm() {
         const emailVal = document.getElementById('email').value.trim();
         const projectVal = document.getElementById('projectType').value;
         const budgetVal = document.getElementById('budget').value;
+        const timelineVal = document.getElementById('timeline').value;
         const detailsVal = document.getElementById('details').value.trim();
 
         // 2. Simple Field Validations
-        if (!nameVal || !emailVal || !projectVal || !budgetVal || !detailsVal) {
+        if (!nameVal || !emailVal || !projectVal || !budgetVal || !timelineVal || !detailsVal) {
             showToast('Please fill out all the fields before submitting.', 'error');
             return;
         }
