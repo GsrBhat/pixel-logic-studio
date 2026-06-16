@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Pixel & Logic Studio - Premium Interactivity Controller
+   Crevix Studio - Premium Interactivity Controller
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
