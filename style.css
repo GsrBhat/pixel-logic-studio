@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Crevix Studio - Premium Freelance Portfolio Stylesheet
+   Nuvexo - Premium Freelance Portfolio Stylesheet
    ========================================================================== */
 
 /* Design Tokens & CSS Variables */
@@ -400,15 +400,10 @@ body.cursor-hover .custom-cursor-dot {
     letter-spacing: -0.8px;
 }
 
-.logo-crevix {
+.logo-nuvexo {
     background: var(--primary-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.logo-studio {
-    color: var(--text-color);
-    margin-left: 4px;
 }
 
 .nav-menu {
@@ -1304,7 +1299,7 @@ body.cursor-hover .custom-cursor-dot {
 }
 
 /* ==========================================================================
-   What Makes Crevix Studio Different — Asymmetric Bento Grid
+   What Makes Nuvexo Different — Asymmetric Bento Grid
    ========================================================================== */
 
 .different-section {

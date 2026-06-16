@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Crevix Studio - Premium Interactivity Controller
+   Nuvexo - Premium Interactivity Controller
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
