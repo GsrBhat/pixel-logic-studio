@@ -724,6 +724,28 @@ body.cursor-hover .custom-cursor-dot {
     color: var(--text-secondary);
 }
 
+.section-disclaimer {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(79, 70, 229, 0.04);
+    border: 1px solid rgba(79, 70, 229, 0.12);
+    padding: 0.5rem 1.1rem;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-top: 1.5rem;
+    font-weight: 500;
+}
+
+.disclaimer-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-weight: bold;
+}
+
 /* Font utility */
 .font-secondary {
     font-family: var(--font-secondary);
