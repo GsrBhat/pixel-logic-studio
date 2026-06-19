@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
     initCustomCursor();
     initScrollReveal();
     initActiveNavTracking();
-    initContactForm();
     initParallax();
 
 });
@@ -190,125 +189,7 @@ function initActiveNavTracking() {
     trackActiveSection(); // Trigger immediately
 }
 
-/**
- * 7. Secure Contact Form Submission
- * Captures form inputs, validates fields, and fires animated toast notifications
- */
-function initContactForm() {
-    const form = document.getElementById('contactForm');
-    const toastContainer = document.getElementById('toastContainer');
-    
-    if (!form || !toastContainer) return;
 
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // 1. Fetch Form Inputs
-        const nameVal = document.getElementById('name').value.trim();
-        const emailVal = document.getElementById('email').value.trim();
-        const projectVal = document.getElementById('projectType').value;
-        const budgetVal = document.getElementById('budget').value;
-        const timelineVal = document.getElementById('timeline').value;
-        const detailsVal = document.getElementById('details').value.trim();
-        const honeyVal = form.querySelector('input[name="_honey"]').value;
-
-        // 2. Simple Field Validations
-        if (!nameVal || !emailVal || !projectVal || !budgetVal || !timelineVal || !detailsVal) {
-            showToast('Please fill out all the fields before submitting.', 'error');
-            return;
-        }
-
-        // 3. Update Button State
-        const submitBtn = form.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.disabled = true;
-        submitBtn.textContent = 'Sending...';
-
-        // 4. Send via FormSubmit AJAX
-        fetch('https://formsubmit.co/ajax/gsrbhat20@gmail.com', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify({
-                Name: nameVal,
-                Email: emailVal,
-                "Project Type": projectVal,
-                Budget: budgetVal,
-                Timeline: timelineVal,
-                Details: detailsVal,
-                _honey: honeyVal,
-                _subject: `New Nuvexo Inquiry from ${nameVal}`,
-                _template: 'table'
-            })
-        })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => {
-            showToast(`Thank you, ${nameVal}! Your inquiry has been sent. We'll be in touch shortly.`, 'success');
-            form.reset();
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            showToast('There was an issue sending your inquiry. Please try again or email directly.', 'error');
-        })
-        .finally(() => {
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalText;
-        });
-    });
-
-    /**
-     * Helper to show glassmorphic toast notification
-     */
-    function showToast(message, type = 'success') {
-        const toast = document.createElement('div');
-        toast.className = `toast toast-${type}`;
-        
-        // Define appropriate SVG Icon
-        let iconMarkup = '';
-        if (type === 'success') {
-            iconMarkup = `
-                <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <polyline points="20,6 9,17 4,12"/>
-                </svg>
-            `;
-        } else {
-            iconMarkup = `
-                <svg class="toast-icon" style="color: #f87171;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
-                    <line x1="18" y1="6" x2="6" y2="18"/>
-                    <line x1="6" y1="6" x2="18" y2="18"/>
-                </svg>
-            `;
-        }
-
-        toast.innerHTML = `
-            ${iconMarkup}
-            <span class="toast-message">${message}</span>
-        `;
-
-        toastContainer.appendChild(toast);
-
-        // Animate entrance
-        setTimeout(() => {
-            toast.classList.add('show');
-        }, 50);
-
-        // Animate exit and remove
-        setTimeout(() => {
-            toast.classList.remove('show');
-            // Remove from DOM after transition finishes
-            toast.addEventListener('transitionend', () => {
-                toast.remove();
-            });
-        }, 5000);
-    }
-}
 
 /**
  * 8. Premium Parallax Motion
